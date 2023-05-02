@@ -5,6 +5,7 @@
 }
 html {
   position: relative;
+  height: 100vh;
 }
 nav {
   display: flex;
@@ -26,13 +27,12 @@ nav {
     color: black;
     font-size: 1.5rem;
 }
-body {
-    background-position: 80%;
-    background-size: 100%;
-    background-image: url("resources/css/img/bg.jpg");
-    background-repeat: no-repeat;
+#bg {
     position: relative;
+    width: 100%;
+    top: -400px;
 }
+
 
 #mario {
   width: 50px;
