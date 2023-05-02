@@ -3,9 +3,10 @@
     padding: 0;
     scroll-behavior: smooth;
 }
-html {
-  position: relative;
-  height: 100vh;
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 nav {
   display: flex;
@@ -29,19 +30,55 @@ nav {
     font-size: 1.5rem;
 }
 .bg {
-    position: relative;
-    background-image: url("/resources/css/img/bg.jpg");
-    background-size:cover;
-    aspect-ratio: 16/9;
-    width: 100%;
-    z-index: -10;
-    background-size: 70%;
-    background-repeat: no-repeat;
+  position: relative;
+  background-image: url("/resources/css/img/bg.jpg");
+  width: 100%;
+  height: 500px;
+  z-index: -10;
+  background-size: auto 100%;
+  background-repeat: repeat-x;
+}
+.doisb {
+  width: 50px;
+  position: absolute;
+  bottom: 200px;
+  animation: blocos .5s infinite;
+  animation-delay: 1.5s;
+}
+.animado {
+  animation: mario .6s normal;
+}
+#blocoum {
+  left: 52%;
 }
 #mario {
   width: 100px;
   position: absolute;
   left: 50%;
-  bottom: 0;
+  bottom: 60px;
+  animation-delay: 1s;
+}
+@keyframes mario {
+  0% {
+    bottom: 60px;
+  }
+  50% {
+    transform: translateY(-40px);
+  }
+  100% {
+    bottom: 60px;
+
+  }
+}
+@keyframes blocos {
+  0% {
+    transform: rotateX(0deg);
+  }
+  50% {
+    transform: rotateX(90deg);
+  }
+  100% {
+    transform: rotateX(0deg);
+  }
 }
 
