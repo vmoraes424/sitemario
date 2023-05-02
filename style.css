@@ -12,6 +12,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 4rem;
+  z-index: -100;
 }
 #logo {
   width: 100px;
@@ -27,15 +28,18 @@ nav {
     color: black;
     font-size: 1.5rem;
 }
-#bg {
+.bg {
     position: relative;
+    background-image: url("/resources/css/img/bg.jpg");
+    background-size:cover;
+    aspect-ratio: 16/9;
     width: 100%;
-    top: -400px;
+    z-index: -10;
+    background-size: 70%;
+    background-repeat: no-repeat;
 }
-
-
 #mario {
-  width: 50px;
+  width: 100px;
   position: absolute;
   left: 50%;
   bottom: 0;
