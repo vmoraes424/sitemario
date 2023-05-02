@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 4rem;
+}
+#logo {
+  width: 100px;
+}
+.container ul {
+  display: flex;
+  gap: 2rem;
+}
+
+.container ul li {
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+}
+body {
+    background-position: 80%;
+    background-size: 100%;
+    background-image: url("resources/css/img/bg.jpg");
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+#mario {
+  width: 50px;
+  position: absolute;
+  left: 50%;
+  right: 50%;
+}
+
