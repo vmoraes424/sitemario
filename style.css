@@ -66,6 +66,41 @@ nav {
   bottom: 60px;
   animation-delay: 1s;
 }
+
+.water {
+  background-image: url("/resources/css/img/waterlevel.webp");
+  position: relative;
+  width: 100%;
+  height: 500px;
+  background-size: auto 100%;
+  background-repeat: repeat-x;
+}
+
+.underground {
+  background-image: url("/resources/css/img/underground.png");
+  position: relative;
+  width: 100%;
+  height: 500px;
+  background-size: auto 100%;
+  background-repeat: repeat-x;
+}
+
+footer {
+  height: 50vh;
+  background-color: black;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+footer h1 {
+  color: white;
+}
+.star {
+  width: 100px;
+  animation: star 1s ease infinite;
+}
+
+/* Animações Keyframes */
 @keyframes mario {
   0% {
     bottom: 60px;
@@ -113,21 +148,17 @@ nav {
   transform: translateY(-70px);
   }
 }
+@keyframes star {
+  0% {
+    transform: translateY(0)
+  }
+  
+  50% {
+    
+    transform: translateY(-20px)
+  }
 
-.water {
-  background-image: url("/resources/css/img/waterlevel.webp");
-  position: relative;
-  width: 100%;
-  height: 500px;
-  background-size: auto 100%;
-  background-repeat: repeat-x;
-}
-
-.underground {
-  background-image: url("/resources/css/img/underground.png");
-  position: relative;
-  width: 100%;
-  height: 500px;
-  background-size: auto 100%;
-  background-repeat: repeat-x;
+  100% {
+    transform: translateY(0)
+  }
 }
