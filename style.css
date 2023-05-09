@@ -100,6 +100,13 @@ footer h1 {
   animation: star 1s ease infinite;
 }
 
+p {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
 /* Animações Keyframes */
 @keyframes mario {
   0% {
