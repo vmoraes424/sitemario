@@ -1,9 +1,10 @@
 * {
-    margin: 0;
-    padding: 0;
-    scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
 }
-html, body {
+html,
+body {
   height: 100%;
   margin: 0;
   padding: 0;
@@ -17,6 +18,13 @@ nav {
 }
 #logo {
   width: 100px;
+  cursor: pointer;
+}
+#coin {
+  position: absolute;
+  width: 50px;
+  left: 85px;
+  z-index: -1;
 }
 .container ul {
   display: flex;
@@ -24,17 +32,20 @@ nav {
 }
 
 .container ul li {
-    list-style: none;
-    text-decoration: none;
-    color: black;
-    font-size: 1.5rem;
+  list-style: none;
+  color: black;
+  font-size: 1.5rem;
+}
+
+.container ul li a {
+  text-decoration: none;
+  cursor: pointer;
 }
 .bg {
   position: relative;
   background-image: url("/resources/css/img/bg.jpg");
   width: 100%;
   height: 500px;
-  z-index: -10;
   background-size: auto 100%;
   background-repeat: repeat-x;
 }
@@ -42,11 +53,8 @@ nav {
   width: 50px;
   position: absolute;
   bottom: 200px;
-  animation: blocos .5s infinite;
+  animation: blocos 0.5s infinite;
   animation-delay: 1.5s;
-}
-.animado {
-  animation: mario .6s normal;
 }
 #blocoum {
   left: 52%;
@@ -67,7 +75,6 @@ nav {
   }
   100% {
     bottom: 60px;
-
   }
 }
 @keyframes blocos {
@@ -82,3 +89,45 @@ nav {
   }
 }
 
+@keyframes logo {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes coin {
+  0% {
+  transform: translateY(0);
+  opacity: 0;
+  z-index: -1;
+  }
+  100% {
+    opacity: 100;
+    z-index: 0;
+  transform: translateY(-70px);
+  }
+}
+
+.water {
+  background-image: url("/resources/css/img/waterlevel.webp");
+  position: relative;
+  width: 100%;
+  height: 500px;
+  background-size: auto 100%;
+  background-repeat: repeat-x;
+}
+
+.underground {
+  background-image: url("/resources/css/img/underground.png");
+  position: relative;
+  width: 100%;
+  height: 500px;
+  background-size: auto 100%;
+  background-repeat: repeat-x;
+}
