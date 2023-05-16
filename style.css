@@ -18,6 +18,7 @@ nav {
 }
 #logo {
   width: 100px;
+  transform: translateY(50px);
   cursor: pointer;
 }
 #coin {
@@ -64,7 +65,13 @@ nav {
   position: absolute;
   left: 50%;
   bottom: 60px;
-  animation-delay: 1s;
+}
+
+.cano {
+  width: 100px;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
 }
 
 .water {
@@ -108,17 +115,7 @@ p {
 }
 
 /* Animações Keyframes */
-@keyframes mario {
-  0% {
-    bottom: 60px;
-  }
-  50% {
-    transform: translateY(-40px);
-  }
-  100% {
-    bottom: 60px;
-  }
-}
+
 @keyframes blocos {
   0% {
     transform: rotateX(0deg);
@@ -133,26 +130,26 @@ p {
 
 @keyframes logo {
   0% {
-    transform: translateY(0);
+    transform: translateY(50px);
   }
   50% {
-    transform: translateY(-10px);
+    transform: translateY(20px);
   }
   100% {
-    transform: translateY(0);
+    transform: translateY(50px);
   }
 }
 
 @keyframes coin {
   0% {
-  transform: translateY(0);
+  transform: translateY(10px);
   opacity: 0;
   z-index: -1;
   }
   100% {
     opacity: 100;
     z-index: 0;
-  transform: translateY(-70px);
+  transform: translateY(-40px);
   }
 }
 @keyframes star {
